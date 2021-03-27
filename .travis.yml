@@ -1,1 +1,10 @@
-
+deploy:
+  provider: elasticbeanstalk
+  access_key_id:
+    secure: "AKIARGE6CGLNQYOPFBNF"
+  secret_access_key:
+    secure: "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"
+  region: "us-east-2"
+  app: "Group 43 Webpage"
+  env: "Group43webpage-env"
+  bucket_name: "the-target-S3-bucket"
