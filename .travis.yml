@@ -1,10 +1,4 @@
-deploy:
-  provider: elasticbeanstalk
-  access_key_id:
-    secure: ""
-  secret_access_key:
-    secure: ""
-  region: "us-east-2"
-  app: "Group 43 Webpage"
-  env: "Group43webpage-env"
-  bucket_name: "the-target-S3-bucket"
+language: ruby
+rvm:
+ - 2.2
+ - jruby
