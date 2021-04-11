@@ -8,9 +8,9 @@ after_success:
 deploy:
   provider: elasticbeanstalk
   access_key_id:
-    secure: "$AMZN_ACCESS_KEY_ID"
+    secure: $AMZN_ACCESS_KEY_ID
   secret_access_key:
-    secure: "$AMZN_SECRET_ACCESS_KEY"
+    secure: $AMZN_SECRET_ACCESS_KEY
   region: "us-east-2"
   app: "cps847-step4"
   env: "Cps847step4-env"
