@@ -13,3 +13,5 @@ deploy:
   app: "cps847-step4"
   env: "Cps847step4-env"
   bucket_name: "elasticbeanstalk-us-east-2-897147013837"
+  on:
+      branch: main
