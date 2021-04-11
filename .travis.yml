@@ -5,3 +5,13 @@ script:
     - coverage run -m unittest sample_code_test.py
 after_success:
     - bash <(curl -s https://codecov.io/bash)
+deploy:
+  provider: elasticbeanstalk
+  access_key_id:
+    secure: "Encrypted <access-key-id>=AMZN_ACCESS_KEY_ID"
+  secret_access_key:
+    secure: "Encypted <secret-access-key>=AMZN_SECRET_ACCESS_KEY"
+  region: "us-east-2"
+  app: "cps847-step4"
+  env: "Cps847step4-env"
+  bucket_name: "elasticbeanstalk-us-east-2-897147013837"
