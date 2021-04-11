@@ -10,8 +10,8 @@ deploy:
   access_key_id: $AMZN_ACCESS_KEY_ID
   secret_access_key: $AMZN_SECRET_ACCESS_KEY
   region: "us-east-2"
-  app: "cps847-step4"
-  env: "Cps847step4-env"
+  app: "cps847-travis"
+  env: "Cps847travis-env"
   bucket_name: "elasticbeanstalk-us-east-2-897147013837"
   on:
       branch: main
